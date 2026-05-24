@@ -11,7 +11,6 @@ from core.matcher import score_label
 
 st.set_page_config(
     page_title="Job Tracker",
-    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -35,7 +34,7 @@ if not jobs:
     st.info(
         "No applications tracked yet. "
         "Click **Add Job** in the sidebar to get started.",
-        icon="",
+        
     )
     st.stop()
 

@@ -20,7 +20,7 @@ st.divider()
 jobs = get_all_jobs()
 
 if not jobs:
-    st.info("No applications yet. Add one from the ** Add Job** page.", icon="")
+    st.info("No applications yet. Add one from the ** Add Job** page.",  )
     st.stop()
 
 

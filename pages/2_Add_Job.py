@@ -12,7 +12,7 @@ from core.database import add_job, STATUSES
 from core.matcher import compute_match, score_label
 from core.parser import extract_pdf_text
 
-st.set_page_config(page_title="Add Job", page_icon="", layout="wide")
+st.set_page_config(page_title="Add Job", layout="wide")
 
 st.title("Add Application")
 st.caption("Paste the job description and your resume to get an match score.")

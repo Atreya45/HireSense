@@ -12,7 +12,7 @@ import streamlit as st
 
 from core.database import get_all_jobs, STATUSES
 
-st.set_page_config(page_title="Dashboard", page_icon="", layout="wide")
+st.set_page_config(page_title="Dashboard", layout="wide")
 
 st.title("Dashboard")
 st.caption("A visual overview of your job search.")
@@ -21,7 +21,7 @@ st.divider()
 jobs = get_all_jobs()
 
 if not jobs:
-    st.info("No data yet. Add your first application to see charts here.", icon="")
+    st.info("No data yet. Add your first application to see charts here.",  )
     st.stop()
 
 df = pd.DataFrame(jobs)
